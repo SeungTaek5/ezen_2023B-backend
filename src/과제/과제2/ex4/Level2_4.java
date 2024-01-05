@@ -17,7 +17,27 @@ public class Level2_4 {
 		String player = scanner.next();
 		
 		/* 문제풀이 위치 */
-		
+
+		// 가위=0 바위=1 보=2
+		if(com == 0){System.out.println("comran) 가위");}
+		else if(com == 1){System.out.println("comran) 바위");}
+		else if(com == 3){System.out.println("comran) 보");}
+
+		int player1 = 0;
+		if(player.equals("가위")){player1 = 0;}
+		else if(player.equals("바위")){player1 = 1;}
+		else if(player.equals("보")){player1 = 2;}
+
+		if(com-player1 == 0){
+			System.out.println("무승부입니다.");
+		}
+		else if(com-player1 > 0 || com-player1 == -2){
+			System.out.println("result) com 승리");
+		}
+		else{
+			System.out.println("result) player 승리");
+		}
+
 		/* ----------- */
 	}
 }

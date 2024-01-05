@@ -19,8 +19,22 @@ public class Level2_3 {
 		
 		/* 문제풀이 위치 */
 
-		int 합계 = 0;
-		float 평균 = 0;
+		int 합계 = kor + eng + mat;
+		float 평균 = 합계 / 3;
+		boolean 삼배수 = false;
+		boolean 칠배수 = false;
+		String 홀짝 = "";
+		String 결과 = "";
+
+		if(합계 % 3 == 0){ 삼배수 = true; }
+		if(합계 % 7 == 0){ 칠배수 = true; }
+
+		if(합계 % 2 == 0){홀짝 = "짝수";}
+		else{홀짝 = "홀수";}
+
+		if(합계 >= 65){결과="합격";}else{결과="탈락";}
+		System.out.println(kor+"\t"+eng +"\t"+ mat +"\t"+합계 +"\t"+
+				String.format("%.1f", 평균)+"\t"+삼배수+"\t"+칠배수+"\t"+홀짝+"\t"+결과);
 		/* ----------- */
 	}
 }
