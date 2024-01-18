@@ -12,7 +12,18 @@ public class Level3_2 {
 		
 		
 		/* 문제풀이 위치 */
-		
+		int num = 1;
+
+		while (true){
+			System.out.print(num + "회 입력 : ");
+			String insert = scanner.next();
+			if(insert.equals("end")){
+				System.out.println("안내) 프로그램 종료합니다. [총 "+ (num-1) +"회 입력]");
+				break;
+			}
+
+			num++;
+		}
 		/* ----------- */
 
 	}
