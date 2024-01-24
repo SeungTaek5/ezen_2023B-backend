@@ -18,7 +18,7 @@ public class Step1 {
         try{ // 만약에 해당 연동할 db서버의 정보가 잘못되거나 db서버쪽에 문제가 발생했을때 대처
 
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/test5" ,
+                    "jdbc:mysql://localhost:3306/test4" ,
                     "root" ,
                     "1234");
             System.out.println("[시스템정보] : DB서버와 연동 성공했습니다.");
